@@ -1,0 +1,24 @@
+[project]
+name = 'Blockchain-Based-Government-Identity-Management'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.agency-verification]
+path = 'contracts/agency-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.identity-verification]
+path = 'contracts/identity-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
